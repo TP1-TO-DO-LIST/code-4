@@ -1,0 +1,8 @@
+.getElementById("clear-completed")
+    .addEventListener("click", function () {
+      deleteIndexes = [];
+      document.querySelectorAll(".card.checked").forEach(function (card) {
+        deleteIndexes.push(
+          [...document.querySelectorAll(".todos .card")].indexOf(card)
+        );
+        //حذف كل ال cheack المحدد
